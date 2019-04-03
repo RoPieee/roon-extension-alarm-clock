@@ -1,0 +1,15 @@
+[Unit]
+Description=TheAppgineer Roon extension to start or stop playback on a specific zone at a specific time
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/TheAppgineer/alarm-clock
+ExecStart=/usr/bin/node /opt/TheAppgineer/alarm-clock/alarm-clock.js
+Restart=always
+RestartSec=10
+SyslogIdentifier=theappgineer-alarm-clock
+#Environment=NODE_PORT=80 NODE_DEBUG=info NODE_SETTINGS=/data/ropieee.conf
+
+[Install]
+WantedBy=multi-user.target
+
