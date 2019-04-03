@@ -1,0 +1,11 @@
+post_install()
+{
+   systemctl daemon-reload
+}
+
+post_upgrade()
+{
+   systemctl daemon-reload
+   systemctl enable roon-extension-alarm-clock
+   systemctl restart roon-extension-alarm-clock 
+}
