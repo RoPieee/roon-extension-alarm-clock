@@ -33,6 +33,7 @@ echo "package"
    cp -R "${srcdir}/alarm-clock-checkout/node_modules"                                "${pkgdir}/opt/TheAppgineer/alarm-clock"
    install -m0644 "${srcdir}/alarm-clock-checkout/alarm-clock.js"                     "${pkgdir}/opt/TheAppgineer/alarm-clock/alarm-clock.js"
    install -m0644 "${srcdir}/alarm-clock-checkout/package.json"                       "${pkgdir}/opt/TheAppgineer/alarm-clock/package.json"
+   install -m0644 "${srcdir}/alarm-clock-checkout/LICENSE"                            "${pkgdir}/opt/TheAppgineer/alarm-clock/LICENSE"
    install -m0644 "${srcdir}/alarm-clock-checkout/roon-extension-alarm-clock.service" "${pkgdir}/etc/systemd/system"
 
 }
