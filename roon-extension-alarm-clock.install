@@ -6,8 +6,4 @@ post_install()
 post_upgrade()
 {
    systemctl daemon-reload
-   if systemctl is-enabled roon-extension-alarm-clock
-   then
-      systemctl restart roon-extension-alarm-clock
-   fi
 }
