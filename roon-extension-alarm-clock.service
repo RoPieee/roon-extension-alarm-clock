@@ -1,6 +1,6 @@
 [Unit]
 Description=TheAppgineer Roon extension to start or stop playback on a specific zone at a specific time
-After=network.target
+After=network.target ropieee-sync.service
 
 [Service]
 WorkingDirectory=/opt/TheAppgineer/alarm-clock
